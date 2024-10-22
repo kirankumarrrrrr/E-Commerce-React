@@ -3,13 +3,13 @@ import './index.css'
 import { Routes, Route } from 'react-router-dom'
 import Homepage from './components/Homepage'
 import NewCollection from './components/NewCollection'
-import About from './components/About'
 import Contact from './components/Contact'
 import Search from './components/Search'
 import Profile from './components/Profile'
 import Cart from './components/Cart'
-
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import About from './components/About'
 
 const App = () => {
   return (
@@ -24,6 +24,7 @@ const App = () => {
         <Route path="/Profile" element={<Profile />} />
         <Route path="/Cart" element={<Cart />} />
       </Routes>
+      <Footer /> 
     </div>
   );
 }

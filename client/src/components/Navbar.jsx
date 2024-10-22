@@ -45,12 +45,12 @@ const Navbar = () => {
             <CiSearch/>
           </span>
         </NavLink>
-        <NavLink to="/Profile" className="flex flex-column items-center gap-1">
+        <NavLink to="/Cart" className="flex flex-column items-center gap-1">
           <span className="transform transition-transform duration-300 hover:scale-150 text-2xl">
             <FaCartShopping/>
           </span>
         </NavLink>
-        <NavLink to="/Cart" className="flex flex-column items-center gap-1">
+        <NavLink to="/Profile" className="flex flex-column items-center gap-1">
           <span className="transform transition-transform duration-300 hover:scale-150 text-2xl">
             <CgProfile/>
           </span>

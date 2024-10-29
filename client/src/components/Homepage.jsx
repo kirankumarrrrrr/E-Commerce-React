@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import heroimage from "../assets/hero_img.png";
+import heroimage from "../assets/homeecom.jpg";
 import "./Global.css";
 import { RiExchangeFundsFill } from "react-icons/ri";
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
@@ -80,6 +80,14 @@ const Homepage = () => {
                   $ {product.price}
                 </p>
               </div>
+              <div className="mt-auto mr-auto flex flex-col justify-center items-center gap-4 pb-5 width-100%">
+                  <button
+                    className="border px-4 py-2 bg-grey-600 text-black font-semibold rounded-md shadow hover:bg-[rgb(243,132,11)] transition duration-300"
+                    onClick={() => addtocart(product, index)}
+                  >
+                    Add to Cart
+                  </button>
+                </div>
             </div>
           ))}
         </div>
@@ -114,6 +122,14 @@ const Homepage = () => {
                   $ {product.price}
                 </p>
               </div>
+              <div className="mt-auto mr-auto flex flex-col justify-center items-center gap-4 pb-5 width-100%">
+                  <button
+                    className="border px-4 py-2 bg-grey-600 text-black font-semibold rounded-md shadow hover:bg-[rgb(243,132,11)] transition duration-300"
+                    onClick={() => addtocart(product, index)}
+                  >
+                    Add to Cart
+                  </button>
+                </div>
             </div>
           ))}
         </div>
